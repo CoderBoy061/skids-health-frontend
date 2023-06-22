@@ -1,0 +1,242 @@
+/* for mobile view */
+@media only screen and (max-width: 700px) {
+  .home-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #056019;
+    font-weight: 700;
+    padding-top: 2vh;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 2vh;
+    margin-top: 2vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 1vh;
+    height: 70vh;
+    width: 100%;
+  }
+  .card {
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+    width: 20vw;
+    height: 30vh;
+    max-height: 50vh;
+    max-width: 50vw;
+    padding: 5vh 3vw;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+    .icon-div{
+      background-color: rgb(162, 89, 255);
+      padding: 8px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: rgb(162, 89, 255);
+      padding: 5px 0px;
+      word-wrap: break-word;
+    }
+    .email {
+      font-size: 18px;
+      font-weight: 500;
+      color: rgb(172, 169, 169);
+      padding: 4px 0px;
+      word-wrap: break-word;
+    }
+    .phone {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(172, 169, 169);
+      padding: 3px 0px;
+      word-wrap: break-word;
+    }
+    .work-icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+      cursor: pointer;
+      background-color: rgb(162, 89, 255);
+      
+      .phone {
+        color: white;
+      }
+      .name {
+        color: white;
+      }
+      .email {
+        color: white;
+      }
+      
+    }
+  }
+}
+
+/* for desktopview  */
+
+/* I am using tree structure for styling my components. I have created a folder named header inside component folder and inside header folder I have created header.css file. I have imported this header.css file in header.js file. */
+@media only screen and (min-width: 700px) {
+  /* .main-nav {
+    width: 100vw;
+    background-color: rgba(103, 102, 102, 0.01);
+    box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 4%;
+    position: absolute;
+    .mobile_icons {
+      display: none;
+    }
+
+    .nav-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #056019;
+      width: 50%;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: #056019;
+        cursor: pointer;
+        display: block;
+        transform: scale(0.9);
+      }
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 30%;
+
+      .Header_links {
+        color: #056019;
+        font-weight: 700;
+        font-size: 1.2rem;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #056019;
+          cursor: pointer;
+          box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+          display: block;
+          transform: scale(1.1);
+        }
+
+        .link {
+          text-decoration: none;
+          color: #056019;
+        }
+      }
+    }
+  } */
+  .home-section {
+    background-color: rgb(246, 246, 246);
+    height: 88vh;
+    .home-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #056019;
+      font-weight: 700;
+      padding-top: 2vh;
+    }
+    .home-content {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 1vw;
+      column-gap: 2vh;
+      margin-top: 2vh;
+      padding-left: 8vw;
+      padding-right: 8vw;
+      padding-top: 1vh;
+      height: 70vh;
+      overflow-y: scroll;
+      width: 100%;
+    }
+  }
+  .card {
+    background-color: white;
+    box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+    width: 20vw;
+    height: 30vh;
+    max-height: 50vh;
+    max-width: 50vw;
+    padding: 5vh 3vw;
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+    .icon-div{
+      background-color: rgb(162, 89, 255);
+      padding: 8px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: rgb(162, 89, 255);
+      padding: 5px 0px;
+      word-wrap: break-word;
+    }
+    .email {
+      font-size: 18px;
+      font-weight: 500;
+      color: rgb(172, 169, 169);
+      padding: 4px 0px;
+      word-wrap: break-word;
+    }
+    .phone {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(172, 169, 169);
+      padding: 3px 0px;
+      word-wrap: break-word;
+    }
+    .work-icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0px 15px 10px -15px rgba(31, 31, 32, 0.1);
+      cursor: pointer;
+      background-color: rgb(162, 89, 255);
+      
+      .phone {
+        color: white;
+      }
+      .name {
+        color: white;
+      }
+      .email {
+        color: white;
+      }
+      
+    }
+  }
+  .edit_box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
